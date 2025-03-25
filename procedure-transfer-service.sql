@@ -74,5 +74,5 @@ limit 5;
 from service_transfer_audit
 where transfer_date>=now()-INTERVAL '30 days'
 group by service_id 
-having count(*)>1
-limit 5;
+having count(*)>1;
+
